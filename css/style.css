@@ -1,0 +1,67 @@
+*
+{
+	margin: 0px;
+	border: 1px solid red;
+}
+
+div#all
+{
+	width: 900px;
+	margin: -20px auto 0px auto;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+}
+
+#header
+{
+	background-color: #0b2e13;
+	height: 220px;
+}
+
+#dictionaryHome
+{
+	top: 35px;
+	position: relative;
+	left: 2%;
+}
+
+#displayACharacter
+{
+	background-color: #2ab27b;
+	height: 50px;
+}
+
+.section
+{
+	background-color: #0c5460;
+	height: 800px;
+}
+
+section#mysection
+{
+	display: block;
+	width: 500px;
+	background-color: black;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+aside#aside
+{
+	display: block;
+	width: 200px;
+	float: right;
+	background-color: black;
+	padding: 10px;
+	margin-top: 0x;
+	height: 97.5%;
+}
+
+#footer
+{
+	background-color: #604019;
+	height: 100px;
+	clear: both;
+	overflow: hidden;
+}

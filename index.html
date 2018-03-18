@@ -21,9 +21,9 @@
 <body onload="getDateTime();">
 <div id="all">
     <div id="header">
+
         <img id="dictionaryHome" src="images/dicionariohome.jpg" />
-        <img id="paginainicial" src="images/paginainicial.png" />
-        <img id="indice" src="images/indice.jpg" />
+        <button type="button" class="paginaInicial">Pagina Inicial</button>
         <!------ search bar properties ---------->
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
             <div role="search" class="sbx-custom__wrapper">
@@ -44,6 +44,7 @@
             document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
         </script>
         <!------ search bar properties ---------->
+        <button type="button" class="indice">Índice</button>
     </div>
     <div id="displayACharacter">
 

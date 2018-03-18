@@ -5,6 +5,27 @@
     <link type="text/css" rel="stylesheet" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
 
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+
+                }
+            }
+        }
+    </script>
+
+
     <!------ search bar properties ---------->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
         <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
@@ -32,7 +53,7 @@
         <!------ search bar properties ---------->
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
             <div role="search" class="sbx-custom__wrapper">
-                <input name="search" placeholder="Digite uma palavra" autocomplete="off" required="required" class="sbx-custom__input" type="search">
+                <input name="search" id="myInput" onkeyup="myFunction()" placeholder="Digite uma palavra" autocomplete="off" required="required" class="sbx-custom__input" type="search">
                 <button type="submit" title="Submit your search query." class="sbx-custom__submit">
                     <svg role="img" aria-label="Search">
                         <use xlink:href="#sbx-icon-search-13"></use>
@@ -58,12 +79,12 @@
         <section id="mysection">
                 <article class="container">
                     <ul id="myUL">
-                        <li><a data-toggle="collapse" data-target="#demo">UML</a></li>
-                        <div id="demo" class="collapse">
+                        <li><a data-toggle="collapse" data-target="#a">UML</a></li>
+                        <div id="a" class="collapse">
                             <p>Linguagem de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
                         </div>
                         <li><a data-toggle="collapse" data-target="#b">Agnes</a></li>
-                        <div id="b" class="collapse">
+                        <div id="demo" class="collapse">
                             <p>a de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
                         </div>
                         <li><a href="#">Billy</a></li>

@@ -286,15 +286,6 @@ aside#aside
 	left: 3%;
 }
 
-.paginaInicial:hover {
-	background: #b9bcbd;
-	background-image: -webkit-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -moz-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -ms-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -o-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: linear-gradient(to bottom, #b9bcbd, #a1a1a1);
-	text-decoration: none;
-}
 /* paginaIncial */
 
 /* indice */
@@ -315,14 +306,5 @@ aside#aside
 	left: 3%;
 }
 
-.indice:hover {
-	background: #b9bcbd;
-	background-image: -webkit-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -moz-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -ms-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: -o-linear-gradient(top, #b9bcbd, #a1a1a1);
-	background-image: linear-gradient(to bottom, #b9bcbd, #a1a1a1);
-	text-decoration: none;
-}
 /* indice */
 

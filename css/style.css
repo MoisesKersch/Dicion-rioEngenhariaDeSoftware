@@ -1,7 +1,14 @@
 *
 {
 	margin: 0px;
-	//border: 1px solid red;
+	border: 1px solid red;
+}
+
+p
+{
+	text-align: justify;
+	text-indent: 50px;
+
 }
 
 div#all
@@ -66,10 +73,21 @@ section#mysection
 {
 	display: block;
 	width: 500px;
-	background-color: black;
 	float: left;
 	border-right: 1px solid #606060;
 	padding-right: 15px;
+}
+
+#article
+{
+	fonte-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+	word-wrap: break-word;
+
+
 }
 
 aside#aside
@@ -77,10 +95,9 @@ aside#aside
 	display: block;
 	width: 200px;
 	float: right;
-	background-color: black;
+	background-color: white;
 	padding: 10px;
 	margin-top: 0x;
-	height: 97.5%;
 }
 
 #footer
@@ -303,6 +320,8 @@ aside#aside
 	position: relative;
 	left: 3%;
 }
-
 /* indice */
-
+article.container
+{
+	width: 500px;
+}

@@ -1,13 +1,13 @@
 *
 {
 	margin: 0px;
-	border: 1px solid red;
+	//border: 1px solid red;
 }
 
 p
 {
 	text-align: justify;
-	text-indent: 50px;
+	text-indent: 30px;
 
 }
 
@@ -38,9 +38,10 @@ div#all
 #paginainicial
 {
 	width: 150px;
-	position: relative;
-	left: 5%;
-	bottom: 60px;
+	position: absolute;
+	top: 200%;
+	left: 100px;
+	bottom: 50px;
 }
 
 /* characters display */
@@ -86,8 +87,6 @@ section#mysection
 	padding: 5px 0px 5px 10px;
 	margin: 10px 0px 10px 0px;
 	word-wrap: break-word;
-
-
 }
 
 aside#aside
@@ -117,6 +116,7 @@ aside#aside
 	white-space: nowrap;
 	box-sizing: border-box;
 	font-size: 14px;
+	top: 40%;
 	right: 15.5%;
 }
 
@@ -297,7 +297,7 @@ aside#aside
 	padding: 3px 31px 3px 35px;
 	border: solid #000000 1px;
 	text-decoration: none;
-	top: -30%;
+	top: -1%;
 	position: relative;
 	left: 3%;
 }

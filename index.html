@@ -4,27 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link type="text/css" rel="stylesheet" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
-
-
-    <script>
-        function myFunction() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-
-                }
-            }
-        }
-    </script>
-
+    <script src="./js/functions.js"></script>
 
     <!------ search bar properties ---------->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -37,19 +17,24 @@
         </symbol>
     </svg>
     <!------ search bar properties ---------->
+
     <!------ collapse and expand settings---------->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!------ collapse and expand settings---------->
-    <title>Blank Page</title>
+
+    <title>Dicionário Engenharia de Software</title>
 </head>
-<body onload="getDateTime();">
+<body>
 <div id="all">
     <div id="header">
         <img id="dictionaryHome" src="images/dicionariohome.jpg" />
+
+
         <button type="button" class="paginaInicial">Pagina Inicial</button>
+
         <!------ search bar properties ---------->
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
             <div role="search" class="sbx-custom__wrapper">
@@ -85,7 +70,7 @@
                         </div>
                         <li><a data-toggle="collapse" data-target="#b">Agnes</a></li>
                         <div id="demo" class="collapse">
-                            <p>a de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
+                            <p>A de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
                         </div>
                         <li><a href="#">Billy</a></li>
                         <li><a href="#">Bob</a></li>

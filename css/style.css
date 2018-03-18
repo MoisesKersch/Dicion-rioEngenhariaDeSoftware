@@ -316,12 +316,34 @@ aside#aside
 	padding: 3px 31px 3px 35px;
 	border: solid #000000 1px;
 	text-decoration: none;
-	top: 20%;
 	position: relative;
 	left: 3%;
+	bottom: 39%;
 }
 /* indice */
 article.container
 {
 	width: 500px;
+}
+
+/* alfabeto */
+
+.alphabet
+{
+	position: relative;
+	top: 20%;
+	left: 16%;
+	width: 750px;
+}
+
+
+/* alfabeto */
+
+ul {
+	list-style: none;
+}
+
+li:before {
+	content: "+";
+	margin-right: 4px;
 }

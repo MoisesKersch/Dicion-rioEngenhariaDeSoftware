@@ -35,3 +35,29 @@ function myFunction()
         }
     }
 }
+
+function groupByLetter()
+{
+    var triggers = $('div.alphabet button');
+    var filters = $('ul.dictionary li a');
+
+    triggers.click(function(){
+        var takeLetter = $(this).text();
+        var found = false;
+        filters.parent().hide();
+        var areaexpandedtrue = $('[aria-expanded=true]');
+        if(areaexpandedtrue.length){
+            areaexpandedtrue.hide();
+        }
+
+        filters.each(function(i) {
+            var compareFirstLetter = $(this).text().substr(0,1);
+            if ( compareFirstLetter ==  takeLetter ) {
+                $(this).parent().fadeIn(222);
+                found = true;
+            }
+        });
+        if (!found) {console.log('There is no result.');}
+    });
+}
+

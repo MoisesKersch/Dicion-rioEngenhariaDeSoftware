@@ -5,6 +5,7 @@
     <link type="text/css" rel="stylesheet" href="./css/style.css"/>
     <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
     <script src="./js/functions.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
 
     <!------ search bar properties ---------->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -27,13 +28,13 @@
 
     <title>Dicionário Engenharia de Software</title>
 </head>
-<body>
+<body onload="groupByLetter()">
 <div id="all">
     <div id="header">
         <img id="dictionaryHome" src="images/dicionariohome.jpg" />
 
 
-        <button type="button" class="paginaInicial">Pagina Inicial</button>
+        <button type="button" class="paginaInicial" >Pagina Inicial</button>
 
         <!------ search bar properties ---------->
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
@@ -55,19 +56,52 @@
             document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
         </script>
         <!------ search bar properties ---------->
-        <button type="button" class="indice">Índice</button>
     </div>
     <div id="displayACharacter">
-
+        <div class="alphabet" data-toggle="collapse in" data-target="#a">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-sm">
+                    <button onclick="groupByLetter()" class="btn btn-default">A</button>
+                    <button class="btn btn-default">B</button>
+                    <button class="btn btn-default">C</button>
+                    <button class="btn btn-default">D</button>
+                    <button class="btn btn-default">E</button>
+                    <button class="btn btn-default">F</button>
+                    <button class="btn btn-default">G</button>
+                    <button class="btn btn-default">H</button>
+                    <button class="btn btn-default">I</button>
+                    <button class="btn btn-default">J</button>
+                    <button class="btn btn-default">K</button>
+                    <button class="btn btn-default">L</button>
+                    <button class="btn btn-default">M</button>
+                    <button class="btn btn-default">N</button>
+                    <button class="btn btn-default">O</button>
+                    <button class="btn btn-default">P</button>
+                    <button class="btn btn-default">Q</button>
+                    <button class="btn btn-default">R</button>
+                    <button class="btn btn-default">S</button>
+                    <button class="btn btn-default">T</button>
+                    <button class="btn btn-default">U</button>
+                    <button class="btn btn-default">V</button>
+                    <button class="btn btn-default">W</button>
+                    <button class="btn btn-default">X</button>
+                    <button class="btn btn-default">Y</button>
+                    <button class="btn btn-default">Z</button>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="indice">Índice</button>
     </div>
     <div class="section">
         <section id="mysection">
                 <article class="container">
-                    <ul id="myUL">
+                    <ul id="myUL" class="dictionary">
+
                         <li><a data-toggle="collapse" data-target="#a">UML</a></li>
                         <div id="a" class="collapse">
                             <p>Linguagem de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
                         </div>
+
                         <li><a data-toggle="collapse" data-target="#b">Agnes</a></li>
                         <div id="demo" class="collapse">
                             <p>A de Modelagem Unificada (do inglês, UML- Unified Modeling Language) é uma linguagem-padrão para a elaboração da estrutura de projetos de software. Ela poderá ser empregada para a visualização, a especificação, a construção e a documentação de artefatos que façam uso de sistemas complexos de software.</p>
@@ -78,6 +112,11 @@
                         <li><a href="#">Calvin</a></li>
                         <li><a href="#">Christina</a></li>
                         <li><a href="#">Cindy</a></li>
+                        <li><a href="#">Sindy</a></li>
+                        <li><a href="#">Windy</a></li>
+                        <li><a href="#">Vindy</a></li>
+                        <li><a href="#">Eindy</a></li>
+
                     </ul>
                 </article>
         </section>

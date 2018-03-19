@@ -47,6 +47,7 @@ function groupByLetter()
         filters.parent().hide();
         var areaexpandedtrue = $('[aria-expanded=true]');
         if(areaexpandedtrue.length){
+		location.reload();
             areaexpandedtrue.hide();
         }
 

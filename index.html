@@ -27,14 +27,14 @@
     <!------ collapse and expand settings---------->
 
     <title>Dicionário Engenharia de Software</title>
+
 </head>
 <body onload="groupByLetter()">
 <div id="all">
     <div id="header">
         <img id="dictionaryHome" src="images/dicionariohome.jpg" />
 
-
-        <button type="button" class="paginaInicial" >Pagina Inicial</button>
+        <span class="labels" id="paginainicial">Pagina Inicial</span>
 
         <!------ search bar properties ---------->
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="indice">Índice</button>
+        <span class="labels" id="indice">Índice</span>
     </div>
     <div class="section">
         <section id="mysection">

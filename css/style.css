@@ -37,10 +37,10 @@ div#all
 /* home image */
 #dictionaryHome
 {
-	top: 40px;
+	top: 30px;
 	position: relative;
-	left: 2%;
-	width: 150px;
+	left: 0.6%;
+	width: 200px;
 }
 
 /* paginaincial label */

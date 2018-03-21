@@ -7,7 +7,7 @@
 p
 {
 	text-align: justify;
-	text-indent: 30px;
+	text-indent: 10px;
 
 }
 
@@ -17,14 +17,15 @@ div#all
 {
 	width: 900px;
 	margin: -20px auto 0px auto;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-
+	border-right: solid 1px black;
 }
 
 #header
 {
 	background-color: white;
 	height: 220px;
+	border-left: solid 1px black;
+	border-top:solid 1px black;
 }
 
 
@@ -48,8 +49,8 @@ div#all
 {
 	width: 200px;
 	position: relative;
-	left: 100px;
-    padding: 8px 50px 8px 50px;
+	left: 50.3px;
+  padding: 8px 50px 8px 50px;
 }
 /* paginaincial label */
 
@@ -68,29 +69,32 @@ div#all
 #characters
 {
 	width: 40px;
+
 }
-
-
 
 #displayACharacter
 {
-	background-color: #2ab27b;
+	background-color: white;
+	border-left: solid 1px black;
+	border-top:solid 1px black;
+	border-bottom: solid 1px black;
 	height: 50px;
 }
 
 .section
 {
 	background-color: #0c5460;
-	height: 800px;
+	border-left: 1px solid #606060;
 }
 
 section#mysection
 {
+	padding-top: 20px;
 	display: block;
-	width: 500px;
+	width: 700px;
 	float: left;
 	border-right: 1px solid #606060;
-	padding-right: 15px;
+	border-left: 1px solid #606060;
 }
 
 #article
@@ -103,19 +107,12 @@ section#mysection
 	word-wrap: break-word;
 }
 
-aside#aside
-{
-	display: block;
-	width: 200px;
-	float: right;
-	background-color: white;
-	padding: 10px;
-	margin-top: 0x;
-}
-
 #footer
 {
-	background-color: #604019;
+	background-color: white;
+	border-top: solid 1px black;
+	border-left:solid 1px black;
+	border-bottom: solid 1px black;
 	height: 100px;
 	clear: both;
 	overflow: hidden;
@@ -317,12 +314,10 @@ article.container
 
 /* alfabeto */
 
-ul
+ul a
 {
-	list-style: none;
+ 	color: black;
 }
 
-li:before {
-	content: "+";
-	margin-right: 4px;
-}
+
+ a {text-decoration:none;}

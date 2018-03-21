@@ -327,5 +327,32 @@ ul a
  	color: black;
 }
 
+a {text-decoration:none;}
 
- a {text-decoration:none;}
+/* initial screen setttings */
+#frame
+{
+	border: solid 5px black;
+	width: 900px;
+	position: relative;
+	text-align: center;
+	height: 500px;
+	top: 100px;
+	margin: 0px auto 0px auto;
+}
+
+#frame h1
+{
+	position: relative;
+	top: 150px;
+}
+
+#myButton
+{
+	position: relative;
+	border: solid 2px black;
+	top: 300px;
+	height: 50px;
+	width: 200px;
+	font-size: 20pt;
+}

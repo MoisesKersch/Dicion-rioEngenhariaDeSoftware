@@ -61,3 +61,9 @@ function groupByLetter()
         if (!found) {console.log('There is no result.');}
     });
 }
+
+
+function relocate_home() // use to redirect to home
+{
+     location.href = "home.html";
+}

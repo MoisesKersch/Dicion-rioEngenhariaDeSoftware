@@ -3,20 +3,20 @@ function getDay(value)
 	var days = ["Sunday","Monday","Tuesday","Wednesday","Thurday","Friday","Saturday"];
 	return days[value];
 }
-	
+
 function getMonth(value)
 {
 	var monthNames = ["Jan.", "Feb.", "Mar.", "Apr.", "May.", "Jun.",
   	"Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
-	
+
 	return monthNames[value];
 }
-	
+
 function getDateTime()
 {
 	n =  new Date();
-	
-	document.getElementById('date').innerHTML = getDay(n.getDay()) + " " + getMonth(n.getMonth()) + " " + n.getDate() + ", " + n.getFullYear();	
+
+	document.getElementById('date').innerHTML = getDay(n.getDay()) + " " + getMonth(n.getMonth()) + " " + n.getDate() + ", " + n.getFullYear();
 }
 
 function myFunction()
@@ -47,7 +47,7 @@ function groupByLetter()
         filters.parent().hide();
         var areaexpandedtrue = $('[aria-expanded=true]');
         if(areaexpandedtrue.length){
-		location.reload();
+						location.reload();
             areaexpandedtrue.hide();
         }
 
@@ -61,4 +61,3 @@ function groupByLetter()
         if (!found) {console.log('There is no result.');}
     });
 }
-

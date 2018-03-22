@@ -60,6 +60,12 @@ div#all
     bottom: 14.9px;
     left: 1%;
     padding: 6px 30px 6px 30px;
+
+}
+
+#indice a
+{
+	color: black;
 }
 /* indice label */
 
@@ -319,7 +325,10 @@ ul a
 }
 
 
- a {text-decoration:none;}
+ a 
+ {
+ 	text-decoration:none; 
+ }
 
 /* initial screen setttings */
 #frame

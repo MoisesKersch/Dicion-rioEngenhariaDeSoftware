@@ -57,7 +57,7 @@ div#all
 #indice
 {
     position: relative;
-    bottom: 14.9px;
+    bottom: 23px;
     left: 1%;
     padding: 6px 30px 6px 30px;
 
@@ -123,6 +123,20 @@ section#mysection
 	overflow: hidden;
 }
 
+footer
+{
+	background-color: grey;
+	margin: 7px;
+	position: relative;
+	top: 50%;
+	text-align: center;
+	padding: 10px;
+}
+
+.cop
+{
+	color: black;
+}
 /* search bar css*/
 .sbx-custom {
 	display: inline-block;

@@ -1,13 +1,20 @@
+function start()
+{
+		getDateTime();
+    groupByLetter();
+}
+
+
 function getDay(value)
 {
-	var days = ["Sunday","Monday","Tuesday","Wednesday","Thurday","Friday","Saturday"];
+	var days = ["Domingo","Segunda Feira","Terça Feira","Quarta Feira","Quinta Feira","Sexta Feira","Sábado"];
 	return days[value];
 }
 
 function getMonth(value)
 {
-	var monthNames = ["Jan.", "Feb.", "Mar.", "Apr.", "May.", "Jun.",
-  	"Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
+	var monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junnho",
+  	"Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
 	return monthNames[value];
 }

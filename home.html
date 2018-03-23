@@ -31,14 +31,11 @@
 
 </head>
 
-<body onload="groupByLetter()">
+<body onload="start()">
   <div id="all">
     <div id="header">
-
       <img id="dictionaryHome" src="images/dicionariohome.png" />
-
       <span class="labels" id="paginainicial">Pagina Inicial</span>
-
       <!------ search bar properties ---------->
       <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
         <div role="search" class="sbx-custom__wrapper">
@@ -60,6 +57,7 @@
           this.parentNode.querySelector('input').focus();
         });
       </script>
+        <span id="date" style="left: 77%; position: relative; bottom: 70%; border: solid 1px black; padding: 1%;"> </span>
       <!------ search bar properties ---------->
     </div>
     <div id="displayACharacter">
@@ -325,5 +323,3 @@
 </body>
 
 </html>
-
-

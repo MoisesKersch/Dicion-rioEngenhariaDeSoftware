@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link type="text/css" rel="stylesheet" href="./css/style.css" />
+      <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+      <script src="./js/functions.js"></script>
+      <script src="./js/jquery-3.3.1.min.js"></script>
+      <!------ search bar properties ---------->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+         <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
+            <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+               fill-rule="evenodd" />
+         </symbol>
+         <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+            <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+         </symbol>
+      </svg>
+      <!------ search bar properties ---------->
+      <!------ collapse and expand settings---------->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!------ collapse and expand settings---------->
+      <title>Dicionário Engenharia de Software</title>
+   </head>
+   <body onload="start()">
+      <div id="all">
+         <div id="header">
+            <img id="dictionaryHome" src="images/dicionariohome.png" />
+            <button type="button" class="btn btn-default" id="support" onclick="location.href = 'support.html'" ">Suporte</button>
+            <span class="labels" id="paginainicial">Pagina Inicial</span>
+            <!------ search bar properties ---------->
+            <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+               <div role="search" class="sbx-custom__wrapper">
+                  <input name="search" id="myInput" onkeyup="myFunction()" placeholder="Digite uma palavra" autocomplete="off" required="required" class="sbx-custom__input" type="search">
+                  <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                     <svg role="img" aria-label="Search">
+                        <use xlink:href="#sbx-icon-search-13"></use>
+                     </svg>
+                  </button>
+                  <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                     <svg role="img" aria-label="Reset">
+                        <use xlink:href="#sbx-icon-clear-3"></use>
+                     </svg>
+                  </button>
+               </div>
+            </form>
+            <script type="text/javascript">
+               document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {
+                 this.parentNode.querySelector('input').focus();
+               });
+            </script>
+            <span id="date" style="left: 77%; position: relative; bottom: 70%; border: solid 1px black; padding: 1%;"> </span>
+            <!------ search bar properties ---------->
+         </div>
+         <div id="displayACharacter">
+            <div class="alphabet" data-toggle="collapse in" data-target="#a">
+               <div class="btn-toolbar">
+                  <div class="btn-group btn-group-sm">
+                     <button onclick="groupByLetter()" class="btn btn-default">A</button>
+                     <button class="btn btn-default">B</button>
+                     <button class="btn btn-default">C</button>
+                     <button class="btn btn-default">D</button>
+                     <button class="btn btn-default">E</button>
+                     <button class="btn btn-default">F</button>
+                     <button class="btn btn-default">G</button>
+                     <button class="btn btn-default">H</button>
+                     <button class="btn btn-default">I</button>
+                     <button class="btn btn-default">J</button>
+                     <button class="btn btn-default">K</button>
+                     <button class="btn btn-default">L</button>
+                     <button class="btn btn-default">M</button>
+                     <button class="btn btn-default">N</button>
+                     <button class="btn btn-default">O</button>
+                     <button class="btn btn-default">P</button>
+                     <button class="btn btn-default">Q</button>
+                     <button class="btn btn-default">R</button>
+                     <button class="btn btn-default">S</button>
+                     <button class="btn btn-default">T</button>
+                     <button class="btn btn-default">U</button>
+                     <button class="btn btn-default">V</button>
+                     <button class="btn btn-default">W</button>
+                     <button class="btn btn-default">X</button>
+                     <button class="btn btn-default">Y</button>
+                     <button class="btn btn-default">Z</button>
+                  </div>
+               </div>
+            </div>
+            <button type="button" class="btn btn-default" id="indice" onclick="location.href = 'home.html'" ">Índice</button>
+         </div>
+         <section id="mysection">
+            <article class="container">
+               <div id="sup">
+               <div class="form-group">
+                  <label for="usr">Nome:</label>
+                  <input type="text" class="form-control" id="usr">
+               </div>
+               <div class="form-group">
+                  <label for="pwd">Sobrenome:</label>
+                  <input type="password" class="form-control" id="pwd">
+                  <div class="form-group">
+                     <label for="comment">Comentário</label>
+                     <textarea class="form-control" rows="5" id="comment"></textarea>
+                     <button type="submit" class="btn btn-default">Enviar</button>
+                  </div>
+               </div>
+               </div>
+            </article>
+         </section>
+         <div id="footer">
+            <footer>
+               <div class="cop"><small> &copy; Copyright 2018, Stasis System </small></div>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>

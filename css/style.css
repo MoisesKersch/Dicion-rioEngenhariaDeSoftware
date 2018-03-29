@@ -51,10 +51,10 @@ div#all
 /* paginaincial label */
 #paginainicial
 {
-	width: 200px;
 	position: relative;
-	left: 50.3px;
-  padding: 8px 50px 8px 50px;
+	width: 200px;
+	right: 6.5%;
+	padding: 8px 50px 8px 50px;
 }
 /* paginaincial label */
 
@@ -74,6 +74,14 @@ div#all
 }
 /* indice label */
 
+/* support label */
+#support
+{
+	position: relative;
+	left:600px;
+	top:90px;
+}
+/* support label */
 
 /* characters display */
 #characters
@@ -151,8 +159,8 @@ footer
 	white-space: nowrap;
 	box-sizing: border-box;
 	font-size: 14px;
-	top: 40%;
-	right: 15.5%;
+	left: 25%;
+	bottom: 15%;
 }
 
 .sbx-custom__wrapper {
@@ -375,4 +383,11 @@ ul a
 	height: 50px;
 	width: 200px;
 	font-size: 20pt;
+}
+
+#sup
+{
+	
+	padding: 3px;
+	height: 600px;
 }
